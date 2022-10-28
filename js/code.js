@@ -6,6 +6,7 @@ window.onload = function() {
 
 }
 
+
 const carts = document.getElementById('div-ecommerce')
 
 class Producto{
@@ -28,8 +29,6 @@ const producto3 = new Producto("Film De Polietileno Negro 4m","15","X 100m (100 
 productos.push(producto1)
 productos.push(producto2)
 productos.push(producto3)
-
-
 console.log(productos)
 
 productos.forEach(prodct=>{

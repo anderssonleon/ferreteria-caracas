@@ -9,6 +9,79 @@
     background: rgb(212, 208, 208);
 }
 
+/*COOKIES*/
+.container-cookies{
+  display: none;
+  background-color: #fff;
+  padding: 20px;
+  width:calc(100% - 40px);
+  max-width: 300px;
+  line-height:150%;
+  border-radius:10px ;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 100;
+  padding-top: 60px;
+  box-shadow: 0px 2px 20px 10px rgba(222, 222, 222,.25);
+  text-align: center;
+}
+
+.container-cookies.active{
+  display: block;
+}
+
+
+.container-cookies .cookies-img{
+  max-width:100px;
+  box-shadow: 0px 2px 20px 10px rgba(3, 2, 2, 0.25);
+  border-radius: 10%;
+}
+
+.container-cookies .title-cookies,.p-cookies{
+  margin: 15px;
+}
+
+.container-cookies .botton-cookies{
+  width: 100%;
+  border:none ;
+  background:rgb(250, 150, 0);
+  color: #fff;
+  text-align: center;
+  padding: 15px 20px;
+  cursor: pointer;
+  font-weight: 200;
+  transition: .3s ease all;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+.container-cookies .botton-cookies:hover{
+  background-color: #444;
+}
+.container-cookies .a-cookies{
+ color: #4dbfff;
+ text-decoration: none;
+ font-size: 14px;
+}
+.container-cookies .a-cookies:hover{
+  text-decoration: underline;
+}
+
+.background-cookies{
+  display: none;
+  background:rgba(0, 0, 0, 0.801);
+  position: fixed;
+  z-index: 99;
+  width: 100vw;
+  height: 100vh;
+  top:0;
+  left: 0;
+}
+.background-cookies.active{
+  display: block;
+}
+
 
 /**SPINNER DE LOADING HTML**/
 
