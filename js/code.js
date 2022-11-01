@@ -30,13 +30,13 @@ const producto2 = new Producto(
     "Caño Estructural Rectangular",
     "50",
     "De 40 X 20 X 0,90 Mm Gramabi Barra De 6 Mt De Largo Tubo 40x20x0,9 Medidas Hierro 40x20",
-    "https://http2.mlstatic.com/D_NQ_NP_379625-MLA25470493158_032017-O.webp")
+    "./multimedia/imagenes/carrucel/img2.png")
 
 const producto3 = new Producto(
     "Film De Polietileno Negro 4m",
 "15",
 "X 100m (100 Micrones)",
-"https://http2.mlstatic.com/D_NQ_NP_646053-MLA51920642130_102022-O.webp")
+"./multimedia/imagenes/carrucel/img1.png")
 
 
 
