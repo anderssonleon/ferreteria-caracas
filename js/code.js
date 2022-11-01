@@ -20,9 +20,23 @@ class Producto{
 
 let productos =[]
 
-const producto1 = new Producto("Pinza Ferretería Artesano 4,5 Pulgadas Alicate","40","Mini Pinza de Alicatar o Alicate de Frente. Para lograr mayor precisión.","https://image.shutterstock.com/image-photo/pliers-yellow-black-color-on-260nw-1437550703.jpg") 
-const producto2 = new Producto("Caño Estructural Rectangular","50","De 40 X 20 X 0,90 Mm Gramabi Barra De 6 Mt De Largo Tubo 40x20x0,9 Medidas Hierro 40x20","https://http2.mlstatic.com/D_NQ_NP_379625-MLA25470493158_032017-O.webp")
-const producto3 = new Producto("Film De Polietileno Negro 4m","15","X 100m (100 Micrones)","https://http2.mlstatic.com/D_NQ_NP_646053-MLA51920642130_102022-O.webp")
+const producto1 = new Producto(
+"Pinza Ferretería",
+"40",
+"Mini Pinza de Alicatar o Alicate de Frente. Para lograr mayor precisión.",
+"https://image.shutterstock.com/image-photo/pliers-yellow-black-color-on-260nw-1437550703.jpg") 
+
+const producto2 = new Producto(
+    "Caño Estructural Rectangular",
+    "50",
+    "De 40 X 20 X 0,90 Mm Gramabi Barra De 6 Mt De Largo Tubo 40x20x0,9 Medidas Hierro 40x20",
+    "https://http2.mlstatic.com/D_NQ_NP_379625-MLA25470493158_032017-O.webp")
+
+const producto3 = new Producto(
+    "Film De Polietileno Negro 4m",
+"15",
+"X 100m (100 Micrones)",
+"https://http2.mlstatic.com/D_NQ_NP_646053-MLA51920642130_102022-O.webp")
 
 
 
@@ -33,14 +47,16 @@ console.log(productos)
 
 productos.forEach(prodct=>{
     const contenedor = document.createElement('div')
-    contenedor.className =`card col-lg-2 col-md-2 col-sm-2 mt-2 card-widt  `
+    contenedor.className =`contendor-product`
     contenedor.innerHTML=`
-    <div class="card-body">
-    <img src=${prodct.img} class="card-img-top" alt="...">
-        <h5 class="card-title">${prodct.nombre}
-        ${prodct.precio}</h5>
-        <button  class="btn w-50  btn btn-outline-info">AGREGAR</button>
-        </div>`
+    <div class="card" style="width:25vw;">
+  <img src=${prodct.img} class="card-img" alt="img">
+  <div class="card-body">
+    <h5 class="card-title-tex">${prodct.nombre}</h5>
+    <p class="card-text"><b>$${prodct.precio}</b></p>
+
+  </div>
+</div>`
 
         carts.appendChild(contenedor)
 })
