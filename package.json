@@ -1,0 +1,27 @@
+{
+  "name": "ferreteria-caracas",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon js/inventario.js",
+    "type": "module"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anderssonleon/ferreteria-caracas.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anderssonleon/ferreteria-caracas/issues"
+  },
+  "homepage": "https://github.com/anderssonleon/ferreteria-caracas#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "description": ""
+}
