@@ -1,9 +1,12 @@
+
+
+
+
 window.onload = function() {
    const contenedor = document.getElementById('onload')
    contenedor.style.opacity = "0"
    contenedor.style.visibility = "hidden"
    contenedor.style.display = "none"
-
 }
 
 
