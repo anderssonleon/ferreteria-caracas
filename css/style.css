@@ -408,7 +408,7 @@ margin: 1px;
 display: flex;
 justify-content: center;
 padding: 10px;
-background: linear-gradient(to top,rgb(248, 142, 4),rgb(251, 255, 0));
+background: linear-gradient(to top,rgba(0, 0, 0, 0.993),rgb(3, 55, 168));
 margin-bottom: 50px;
 position: sticky;
 top: 0;
@@ -416,6 +416,21 @@ z-index: 90;
 }
 .filter{
 display: none;
+}
+.card-filter{
+  background:transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+  color: #ffffff;
+  text-align: center;
+  width: 50%;
+  align-items: center;
+}
+.card-filter:hover{
+  background:linear-gradient(to bottom, transparent,rgb(54, 49, 49));
+}
+.card-filter::placeholder{
+ color: #fff;
 }
 
 /*fin de filter*/

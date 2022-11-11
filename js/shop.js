@@ -41,8 +41,7 @@ contenedorProduc = document.getElementById('container-shop')
 
     const infoJson = await infoVigas.json()
     const totalProductVigas = infoJson.vigas;
-
-
+console.log(totalProductVigas)
       totalProductVigas.forEach(element => {
            const inventary = new Productos(element.name,element.size,element.price,element.img)
            products.push(inventary) 
